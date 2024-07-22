@@ -17,11 +17,13 @@ class AnimalSeeder extends Seeder
         for($i=0; $i<50; $i++){
             $animal = new Animal();
             $animal->nome = $faker->name();
-            $animal->specie = $faker->word();
-            $animal->razza = $faker->word();
+            $animal->specie = $faker->name();
             $animal->eta = $faker->numberBetween(1, 10);
             $animal->peso = $faker->randomFloat(2, 1, 10);
             $animal->sesso = $faker->numberBetween(1, 2);
+            $animal->url_img = $faker->imageUrl(640, 480, 'animals', true);
+            $animal->note = $faker->realText(350);
+            $animal->save();
 
         }
     //per n volte
