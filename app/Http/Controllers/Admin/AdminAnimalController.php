@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AnimalController extends Controller
+class AdminAnimalController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,19 @@ class AnimalController extends Controller
         //
     }
 
+
     /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+
+
+
+        /**
      * Show the form for creating a new resource.
      */
     public function create()
@@ -31,13 +43,6 @@ class AnimalController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.

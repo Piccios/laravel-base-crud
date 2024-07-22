@@ -24,14 +24,10 @@ class AnimalSeeder extends Seeder
             $animal->url_img = $faker->imageUrl(500, 300, 'animals', true);
             $animal->note = $faker->realText(350);
             $animal->save();
-
         }
     //per n volte
         //prendo il modello
         //lo popolo
         //lo salvo
-
-
-
     }
 }
