@@ -13,13 +13,13 @@ class CreateAnimalsTable extends Migration
     public function up()
     {
         Schema::create('animals', function (Blueprint $table) {
-            $table->id();  // Definisce una colonna auto_increment primary key
+            $table->id();
             $table->string('nome', 50);
             $table->string('specie', 50);
 
-            $table->integer('eta');  // Definisce una colonna int, senza auto_increment
+            $table->integer('eta');
             $table->decimal('peso', 5, 2);
-            $table->integer('sesso');  // Definisce una colonna int, senza auto_increment
+            $table->integer('sesso');
             $table->string('url_img', 255);
             $table->text('note');
             $table->timestamps();

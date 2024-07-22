@@ -21,7 +21,7 @@ class AnimalSeeder extends Seeder
             $animal->eta = $faker->numberBetween(1, 10);
             $animal->peso = $faker->randomFloat(2, 1, 10);
             $animal->sesso = $faker->numberBetween(1, 2);
-            $animal->url_img = $faker->imageUrl(640, 480, 'animals', true);
+            $animal->url_img = $faker->imageUrl(500, 300, 'animals', true);
             $animal->note = $faker->realText(350);
             $animal->save();
 
