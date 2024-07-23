@@ -38,8 +38,8 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="url_img" class="form-label">Immagine</label>
-                        <input class="form-control form-control-lg" type="file" id="url_img" name="url_img">
+                        <label for="url_img" class="form-label">URL Immagine</label>
+                    <input class="form-control form-control-lg" type="text" id="url_img" name="url_img" placeholder="URL dell'immagine">
                     </div>
                     <div class="mb-3">
                         <label for="note" class="form-label">Note</label>
