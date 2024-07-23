@@ -2,7 +2,7 @@
 @section('page-title', 'Homepage')
 @section('main-content')
 
-
+<section class="container d-flex justify-content-center mt-5">
     <div class="card" style="width: 18rem;">
         <img src="{{ $animal->url_img }}" class="card-img-top" alt="animal img">
 
@@ -29,5 +29,6 @@
 
         </div>
     </div>
+</section>
 
 @endsection
