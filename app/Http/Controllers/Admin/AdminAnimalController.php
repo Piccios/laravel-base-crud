@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Animal;
 use Illuminate\Http\Request;
 
 class AdminAnimalController extends Controller
@@ -12,7 +13,8 @@ class AdminAnimalController extends Controller
      */
     public function index()
     {
-        //
+        $animals = Animal::all();
+        return view('pages.home', compact('animals'));
     }
 
 
@@ -21,7 +23,7 @@ class AdminAnimalController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view ('pages.show', compact('animal'));
     }
 
 
