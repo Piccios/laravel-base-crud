@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Animal;
 use Illuminate\Http\Request;
+use Termwind\Components\Dd;
 
 class AdminAnimalController extends Controller
 {
@@ -44,7 +45,21 @@ class AdminAnimalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->except('_token');
+
+        $animal = new Animal($data);
+        // $animal = new Animal($data);
+        // $animal->nome = $data['nome'];
+        // $animal->specie = $data['specie'];
+        // $animal->eta = $data['eta'];
+        // $animal->peso = $data['peso'];
+        // $animal->sesso = $data['sesso'];
+        // $animal->url_img = $data['url_img'];
+        // $animal->note = $data['note'];
+        $animal->save();
+        return redirect()->route('pages.show', ['animal' => $animal->id]);
+
+        dd($request->all());
     }
 
 

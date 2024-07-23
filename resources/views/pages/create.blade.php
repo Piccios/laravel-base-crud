@@ -45,7 +45,10 @@
                         <label for="note" class="form-label">Note</label>
                         <textarea class="form-control form-control-lg" id="note" name="note" placeholder="Note sull'animale" rows="5"></textarea>
                     </div>
+                    <div class="buttons d-flex justify-content-around">
                     <button type="submit" class="btn btn-primary btn-lg">Aggiungi Animale</button>
+                    <button type="reset" value="Reset fields" class="btn btn-warning btn-lg">Reset</button>
+                </div>
             </div>
 
 
