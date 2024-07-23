@@ -13,7 +13,7 @@
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Eta': {{ $animal->eta }}</li>
-            <li class="list-group-item">Peso: {{ $animal->peso }}</li>
+            <li class="list-group-item">Peso: {{ $animal->peso }}kg</li>
             <li class="list-group-item">Sesso:
                 @if ($animal->sesso == 1)
                     Maschio
