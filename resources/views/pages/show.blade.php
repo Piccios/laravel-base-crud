@@ -9,7 +9,7 @@
         <div class="card-body">
             <h5 class="card-title">Nome: {{ $animal->nome }}</h5>
             <h3 class="card-title">Specie: {{ $animal->specie }}</h3>
-            <p class="card-text">Info: {{ $animal->info }}</p>
+            <p class="card-text">Info: {{ $animal->note }}</p>
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">Eta': {{ $animal->eta }}</li>
@@ -25,7 +25,7 @@
             </li>
         </ul>
         <div class="card-body">
-            <a href="{{ route('pages.index') }}" class="card-link d-flex justify-content-center">Gli altri animali</a>
+            {{-- <a href="{{ route('pages.home') }}" class="card-link d-flex justify-content-center">Gli altri animali</a> --}}
 
         </div>
     </div>
