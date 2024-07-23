@@ -23,7 +23,14 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Età: {{ $animal->eta}} anni</li>
                         <li class="list-group-item">Peso: {{ $animal->peso}} kg</li>
-                        <li class="list-group-item">Altezza: {{ $animal->altezza}} cm</li>
+                        <li class="list-group-item">Sesso:
+                            @if ($animal->sesso == 1)
+                                Maschio
+                            @elseif ($animal->sesso == 2)
+                                Femmina
+                            @else
+                                Non specificato
+                            @endif</li>
                     </ul>
                     <div class="card-body">
                     </div>

@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/home', [AnimalController::class, 'index']);
 
-Route::resource('animal', AdminAnimalController::class);
+Route::resource('animals', AdminAnimalController::class);
 
 // Route::get('/animals', [AdminAnimalController::class, 'index'])->name('admin.animals.index');
 // Route::get('/animals/{id}', [AdminAnimalController::class, 'show'])->name('admin.animals.show');
