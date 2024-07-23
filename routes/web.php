@@ -19,10 +19,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('pages.home');
 // });
 
-Route::get('/home', [AnimalController::class, 'index']);
+// Route::get('/home', [AnimalController::class, 'index']);
 
-Route::resource('animals', AdminAnimalController::class);
+// Route::resource('animals', AdminAnimalController::class);
 
-// Route::get('/animals', [AdminAnimalController::class, 'index'])->name('admin.animals.index');
-Route::get('/animals/{id}', [AdminAnimalController::class, 'show'])->name('admin.animals.show');
+Route::get('/', [AdminAnimalController::class, 'index'])->name('admin.animals.index');
+Route::get('/animals/{animal}', [AdminAnimalController::class, 'show'])->name('pages.show');
 

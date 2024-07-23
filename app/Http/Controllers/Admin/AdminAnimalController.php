@@ -23,7 +23,7 @@ class AdminAnimalController extends Controller
      */
     public function show(Animal $animal)
     {
-        // $animal = Animal::findOrFail($animal->id);
+        $animal = Animal::findOrFail($animal->id);
         return view('pages.show', compact('animal'));
 
     }

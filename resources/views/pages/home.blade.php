@@ -33,7 +33,7 @@
                             @endif</li>
                     </ul>
                     <div class="card-body">
-                        <a href="{{route('pages.show',['animals'=>$animals->id])}}">La mia scheda</a>
+                        <a href="{{route('pages.show',['animal'=>$animal->id])}}">La mia scheda</a>
                     </div>
                 </div>
             </article>

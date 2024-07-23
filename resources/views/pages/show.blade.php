@@ -25,7 +25,7 @@
             </li>
         </ul>
         <div class="card-body">
-            {{-- <a href="{{ route('pages.home') }}" class="card-link d-flex justify-content-center">Gli altri animali</a> --}}
+            <a href="{{ route('pages.home') }}" class="card-link d-flex justify-content-center">Gli altri animali</a>
 
         </div>
     </div>
