@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('page-title', 'Homepage')
+@section('page-title', 'Scheda animale')
 @section('main-content')
 
 <section class="container d-flex justify-content-center mt-5">

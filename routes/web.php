@@ -24,5 +24,8 @@ use Illuminate\Support\Facades\Route;
 // Route::resource('animals', AdminAnimalController::class);
 
 Route::get('/', [AdminAnimalController::class, 'index'])->name('pages.home');
+
+
+//rotta custom va sempre alla fine
 Route::get('/show/{animal}', [AdminAnimalController::class, 'show'])->name('pages.show');
 
