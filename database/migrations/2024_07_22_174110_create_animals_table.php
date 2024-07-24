@@ -16,11 +16,10 @@ class CreateAnimalsTable extends Migration
             $table->id();
             $table->string('nome', 50);
             $table->string('specie', 50);
-
             $table->integer('eta');
             $table->decimal('peso', 5, 2);
             $table->integer('sesso');
-            $table->string('url_img', 255);
+            $table->string('url_img', 1000);
             $table->text('note');
             $table->timestamps();
         });
