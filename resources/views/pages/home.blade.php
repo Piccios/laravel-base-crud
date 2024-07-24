@@ -33,7 +33,9 @@
                             @endif</li>
                     </ul>
                     <div class="card-body">
-                        <a href="{{route('pages.show',['animal'=>$animal->id])}}">La mia scheda</a>
+                        <a class="btn btn-primary" href="#" role="button" href="{{route('pages.show',['animal'=>$animal->id])}}">La mia scheda</a>
+                        <a class="btn btn-warning
+                        "href="{{route('pages.edit',['animal'=>$animal->id])}}">Modifica</a>
                     </div>
                 </div>
             </article>
