@@ -74,9 +74,22 @@ class AdminAnimalController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Animal $animal)
     {
-        //
+
+
+        $data = $request->except('_token');
+
+        // $animal = new Animal($data);
+        // $animal->nome = $data['nome'];
+        // $animal->specie = $data['specie'];
+        // $animal->eta = $data['eta'];
+        // $animal->peso = $data['peso'];
+        // $animal->sesso = $data['sesso'];
+        // $animal->url_img = $data['url_img'];
+        // $animal->note = $data['note'];
+        $animal->update($data);
+        return redirect()->route('pages.show', ['animal' => $animal->id]);
     }
 
     /**

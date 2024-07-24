@@ -11,9 +11,12 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="col-8">
-                <form action="{{ route('pages.store') }}" method="POST">
+                <form action="{{ route('pages.update', $animal) }}" method="POST">
+                    {{-- metodo --}}
+                    @method('PUT')
                     {{-- importantissimo csrf --}}
                     @csrf
+
 
                     <div class="mb-3">
                         <label for="nome">Nome</label>
@@ -48,7 +51,7 @@
                         <textarea class="form-control form-control-lg" id="note" name="note" placeholder="Note sull'animale" rows="5" value="{{$animal->note}}"></textarea>
                     </div>
                     <div class="buttons d-flex justify-content-around">
-                    <button type="submit" class="btn btn-primary btn-lg">Aggiungi Animale</button>
+                    <button type="submit" class="btn btn-primary btn-lg">Modifica</button>
                     <button type="reset" value="Reset fields" class="btn btn-warning btn-lg">Reset</button>
                 </div>
             </div>

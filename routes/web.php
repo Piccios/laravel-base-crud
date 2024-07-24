@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminAnimalController;
-use App\Http\Controllers\AnimalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +27,6 @@ Route::get('/create', [AdminAnimalController::class, 'create'])->name('pages.cre
 Route::post('/store', [AdminAnimalController::class, 'store'])->name('pages.store');
 //rotta custom va sempre alla fine
 Route::get('/{animal}', [AdminAnimalController::class, 'show'])->name('pages.show');
-Route::get('{animal}/edit/', [AdminAnimalController::class, 'edit'])->name('pages.edit');
 Route::put('{animal}',[AdminAnimalController::class, 'update'])->name('pages.update');
 Route::delete('{animal}',[AdminAnimalController::class, 'destroy'])->name('pages.destroy');
+Route::get('{animal}/edit/', [AdminAnimalController::class, 'edit'])->name('pages.edit');

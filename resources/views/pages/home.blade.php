@@ -14,8 +14,8 @@
                     <img src="{{$animal->url_img}}" class="card-img-top" alt="animalIMG">
 
                     <div class="card-body">
-                        <h3 class="card-title">Specie: {{ $animal->specie }}</h3>
-                        <h3 class="card-title">Nome: {{ $animal->nome }}</h3>
+                        <h2 class="card-title">Specie:</h2> <h4>{{ $animal->specie }}</h4>
+                        <h3 class="card-title">Nome: </h3><p>{{ $animal->nome }}</p>
                         <p class="card-text">
                             {{ $animal->info }}
                         </p>
