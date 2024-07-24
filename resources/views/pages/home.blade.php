@@ -3,11 +3,11 @@
 
     @section('main-content')
 
-    <section class="header">
-        <div class="container">
+    <section class="card-container">
+        <div class="container text-center mb-5 mt-2 fw-bold">
             <h1>I nostri amici animali</h1>
         </div>
-        <section class="row row-cols-1 row-cols-md-3 g-4 p-2">
+        <section class="cards row">
             @foreach ($animals as $animal)
             <article class="col animal-item mb-3">
                 <div class="card text-center">
