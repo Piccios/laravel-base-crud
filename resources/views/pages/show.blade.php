@@ -24,10 +24,17 @@
                 @endif
             </li>
         </ul>
-        <div class="card-body">
-            <a href="{{ route('pages.home') }}" class="card-link d-flex justify-content-center">Gli altri animali</a>
-
-        </div>
+        <div class="card-body align-items-center m-2">
+            <a class="btn btn-info" href="{{ route('pages.home') }}" class="card-link d-flex justify-content-center">Gli altri animali</a>
+            <a class="btn btn-warning"href="{{route('pages.edit',['animal'=>$animal->id])}}">Modifica</a>
+            <div class="d-flex justify-content-center m-2">
+                <div class="mb-3">
+                    <form action="{{route('pages.destroy',['animal'=>$animal->id])}}"  method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Elimina</button></form>
+                </div>
+        </div></div>
     </div>
 </section>
 

@@ -10,17 +10,19 @@ p.green{
     margin: 5rem;
 }
 
+.card-buttons{
+    padding: 2rem;
+}
+
 .card{
-    width: 300px;
-    height: 700px;
+    width: 350px;
     box-shadow: 10px 10px 5px rgba(100, 165, 226, 0.288);
     border-radius: 15px;
 }
     .card:hover{
         box-shadow: 10px 10px 5px rgba(49, 119, 185, 0.685);
         border-radius: 15px;
-        width: 310px;
-        height: 710px;
+        width: 360px;
         transition: 1s;
 }
 

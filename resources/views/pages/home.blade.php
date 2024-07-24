@@ -32,10 +32,16 @@
                                 Non specificato
                             @endif</li>
                     </ul>
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button" href="{{route('pages.show',['animal'=>$animal->id])}}">La mia scheda</a>
+                    <div class="card-buttons">
+                        <a class="btn btn-primary"  role="button" href="{{route('pages.show',['animal'=>$animal->id])}}">La mia scheda</a>
                         <a class="btn btn-warning
                         "href="{{route('pages.edit',['animal'=>$animal->id])}}">Modifica</a>
+                    </div>
+                    <div class="mb-3">
+                        <form class="animal-delete" action="{{route('pages.destroy',['animal'=>$animal->id])}}"  method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Elimina</button></form>
                     </div>
                 </div>
             </article>
@@ -45,5 +51,7 @@
         </section>
 
     </section>
-
+    @section('custom-scripts')
+        @vite('resources/js/delete-confirm.js')
+    @endsection
     @endsection
