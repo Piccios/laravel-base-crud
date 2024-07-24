@@ -1,15 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
 
 
-.cards{
-    gap: 3rem;
-    width: 80vw;
-    margin: 0 auto;
-}
 
 .animal-item{
-    min-width: 350px;
-    box-shadow: 10px 10px 5px lightblue;
-    border-radius: 15px;
     padding: 1px;
+    margin: 5rem;
 }
+
+.card{
+    width: 300px;
+    height: 700px;
+    box-shadow: 10px 10px 5px rgba(100, 165, 226, 0.288);
+    border-radius: 15px;
+}
+    .card:hover{
+        box-shadow: 10px 10px 5px rgba(49, 119, 185, 0.685);
+        border-radius: 15px;
+        width: 310px;
+        height: 710px;
+        transition: 1s;
+}
+
