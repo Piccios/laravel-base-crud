@@ -28,4 +28,5 @@ Route::get('/create', [AdminAnimalController::class, 'create'])->name('pages.cre
 Route::post('/store', [AdminAnimalController::class, 'store'])->name('pages.store');
 //rotta custom va sempre alla fine
 Route::get('/show/{animal}', [AdminAnimalController::class, 'show'])->name('pages.show');
+Route::get('/edit/{animal}', [AdminAnimalController::class, 'edit'])->name('pages.edit');
 
